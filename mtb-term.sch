@@ -1,0 +1,274 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MTBbus terminator"
+Date "2021-04-13"
+Rev "1.0"
+Comp "KMŽ Brno I"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:L78L05_SOT89 U1
+U 1 1 6076025B
+P 6100 3650
+F 0 "U1" H 6100 3892 50  0000 C CNN
+F 1 "L78L05_SOT89" H 6100 3801 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 6100 3850 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 6100 3600 50  0001 C CNN
+	1    6100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60761C87
+P 6950 4200
+F 0 "R1" H 7020 4246 50  0000 L CNN
+F 1 "1k" H 7020 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6880 4200 50  0001 C CNN
+F 3 "~" H 6950 4200 50  0001 C CNN
+	1    6950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6076216A
+P 5550 4000
+F 0 "C1" H 5665 4046 50  0000 L CNN
+F 1 "22u" H 5665 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5588 3850 50  0001 C CNN
+F 3 "~" H 5550 4000 50  0001 C CNN
+	1    5550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60762A6B
+P 6950 3800
+F 0 "D2" H 6943 4017 50  0000 C CNN
+F 1 "LED" H 6943 3926 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6950 3800 50  0001 C CNN
+F 3 "~" H 6950 3800 50  0001 C CNN
+	1    6950 3800
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 60763117
+P 6100 4350
+F 0 "#PWR03" H 6100 4100 50  0001 C CNN
+F 1 "GND" H 6105 4177 50  0000 C CNN
+F 2 "" H 6100 4350 50  0001 C CNN
+F 3 "" H 6100 4350 50  0001 C CNN
+	1    6100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 60765A1B
+P 5150 3650
+F 0 "D1" H 5150 3433 50  0000 C CNN
+F 1 "1N4148" H 5150 3524 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 5150 3475 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5150 3650 50  0001 C CNN
+	1    5150 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 3650 5550 3650
+Wire Wire Line
+	5550 3650 5800 3650
+Connection ~ 5550 3650
+Wire Wire Line
+	6950 3950 6950 4050
+Wire Wire Line
+	6100 4350 6600 4350
+Connection ~ 6600 4350
+Wire Wire Line
+	6600 4350 6950 4350
+Wire Wire Line
+	6100 4350 6100 3950
+Connection ~ 6100 4350
+Wire Wire Line
+	5550 4350 6100 4350
+Connection ~ 5550 4350
+Connection ~ 6600 3650
+Wire Wire Line
+	6600 3650 6950 3650
+Wire Wire Line
+	6400 3650 6600 3650
+$Comp
+L Device:C C2
+U 1 1 6076250A
+P 6600 4000
+F 0 "C2" H 6715 4046 50  0000 L CNN
+F 1 "22u" H 6715 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6638 3850 50  0001 C CNN
+F 3 "~" H 6600 4000 50  0001 C CNN
+	1    6600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4150 6600 4350
+Wire Wire Line
+	6600 3850 6600 3650
+Wire Wire Line
+	5550 4150 5550 4350
+Wire Wire Line
+	5550 3850 5550 3650
+Wire Wire Line
+	4550 3850 4800 3850
+Wire Wire Line
+	4800 3850 4800 3650
+Wire Wire Line
+	4800 3950 4800 4350
+Wire Wire Line
+	4800 4350 5550 4350
+Wire Wire Line
+	4550 4050 4700 4050
+Wire Wire Line
+	4550 4150 4600 4150
+$Comp
+L Device:R R3
+U 1 1 607850BF
+P 4450 5050
+F 0 "R3" H 4520 5096 50  0000 L CNN
+F 1 "200R" H 4520 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 5050 50  0001 C CNN
+F 3 "~" H 4450 5050 50  0001 C CNN
+	1    4450 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6078557B
+P 4450 4750
+F 0 "R2" H 4520 4796 50  0000 L CNN
+F 1 "560R" H 4520 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 4750 50  0001 C CNN
+F 3 "~" H 4450 4750 50  0001 C CNN
+	1    4450 4750
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4450 4900
+$Comp
+L Device:R R4
+U 1 1 6078599B
+P 4450 5350
+F 0 "R4" H 4520 5396 50  0000 L CNN
+F 1 "560R" H 4520 5305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 5350 50  0001 C CNN
+F 3 "~" H 4450 5350 50  0001 C CNN
+	1    4450 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 60786713
+P 4450 5500
+F 0 "#PWR05" H 4450 5250 50  0001 C CNN
+F 1 "GND" H 4455 5327 50  0000 C CNN
+F 2 "" H 4450 5500 50  0001 C CNN
+F 3 "" H 4450 5500 50  0001 C CNN
+	1    4450 5500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 60786FAB
+P 6600 3650
+F 0 "#PWR02" H 6600 3500 50  0001 C CNN
+F 1 "+5V" H 6615 3823 50  0000 C CNN
+F 2 "" H 6600 3650 50  0001 C CNN
+F 3 "" H 6600 3650 50  0001 C CNN
+	1    6600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 60787E42
+P 4450 4600
+F 0 "#PWR04" H 4450 4450 50  0001 C CNN
+F 1 "+5V" H 4465 4773 50  0000 C CNN
+F 2 "" H 4450 4600 50  0001 C CNN
+F 3 "" H 4450 4600 50  0001 C CNN
+	1    4450 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 60789458
+P 4800 3650
+F 0 "#PWR01" H 4800 3500 50  0001 C CNN
+F 1 "+12V" H 4815 3823 50  0000 C CNN
+F 2 "" H 4800 3650 50  0001 C CNN
+F 3 "" H 4800 3650 50  0001 C CNN
+	1    4800 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 3650
+Wire Wire Line
+	4700 4900 4700 4050
+Wire Wire Line
+	4450 4900 4700 4900
+Wire Wire Line
+	4600 4150 4600 5200
+Wire Wire Line
+	4600 5200 4450 5200
+Connection ~ 4450 5200
+Wire Wire Line
+	4800 3650 5000 3650
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60798D9A
+P 4800 3850
+F 0 "#FLG0101" H 4800 3925 50  0001 C CNN
+F 1 "PWR_FLAG" V 4800 3978 50  0000 L CNN
+F 2 "" H 4800 3850 50  0001 C CNN
+F 3 "~" H 4800 3850 50  0001 C CNN
+	1    4800 3850
+	0    1    1    0   
+$EndComp
+Connection ~ 4800 3850
+Wire Wire Line
+	4550 3950 4800 3950
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6079A0AB
+P 4800 3950
+F 0 "#FLG0102" H 4800 4025 50  0001 C CNN
+F 1 "PWR_FLAG" V 4800 4078 50  0000 L CNN
+F 2 "" H 4800 3950 50  0001 C CNN
+F 3 "~" H 4800 3950 50  0001 C CNN
+	1    4800 3950
+	0    1    1    0   
+$EndComp
+Connection ~ 4800 3950
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 6079AE24
+P 5550 3650
+F 0 "#FLG0103" H 5550 3725 50  0001 C CNN
+F 1 "PWR_FLAG" H 5550 3823 50  0000 C CNN
+F 2 "" H 5550 3650 50  0001 C CNN
+F 3 "~" H 5550 3650 50  0001 C CNN
+	1    5550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 607AE33F
+P 4350 4050
+F 0 "J1" H 4268 3625 50  0000 C CNN
+F 1 "Conn_01x04" H 4268 3716 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" H 4350 4050 50  0001 C CNN
+F 3 "~" H 4350 4050 50  0001 C CNN
+	1    4350 4050
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
