@@ -19,7 +19,7 @@ U 1 1 6076025B
 P 6100 3650
 F 0 "U1" H 6100 3892 50  0000 C CNN
 F 1 "L78L05_SOT89" H 6100 3801 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3" H 6100 3850 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:SOT-89-3_Handsoldering" H 6100 3850 50  0001 C CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 6100 3600 50  0001 C CNN
 	1    6100 3650
 	1    0    0    -1  
